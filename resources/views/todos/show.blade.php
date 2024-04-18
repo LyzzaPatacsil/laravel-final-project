@@ -1,3 +1,8 @@
+<?php
+// Define and assign a value to the $todo variable
+$todo = App\Models\Todo::find(1);
+
+?>
 @extends('layout')
 
 @section('content')
@@ -5,7 +10,7 @@
 
     <div>
         <h2 class="text-xl">{{ $todo->title }}</h2>
-        <p class="text-gray-500">{{ $todo->created_at->diffStep 2: Create the index.blade.php file
+        <p class="text-gray-500"> $todo->created_at->diffStep 2: Create the index.blade.php file
 Create an `index.blade.php` file in the `resources/views` directory. This file will display the list of todos.
 
 ```html
